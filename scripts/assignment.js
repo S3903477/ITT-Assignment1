@@ -1,8 +1,13 @@
 $(document).ready(function () {
 
-  /* --- SMOOTH SCROLLING --- */
+  // SMOOTH SCROLLING
 
-  $('.nav-link').click(function (e) {
+  $('.nav-item').click(function(){
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $('.nav-link, .link').click(function (e) {
 
     var sectionTo = $(this).attr('href');
     e.preventDefault();
@@ -27,7 +32,7 @@ $(document).ready(function () {
   let sticky = navbar.offsetTop;
 
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
+  /*function myFunction() {
 
 
     if (window.pageYOffset > sticky) {
@@ -35,12 +40,14 @@ $(document).ready(function () {
 
     } else {
       navbar.classList.remove("fixed-top");
-      sticky = navbar.offsetTop;
+      sticky = navbar.offsetTop -40;
     }
 
-  }
+  }*/
 
 });
+
+
 
 // ——————————————————————————————————————————————————
 // TextScramble
@@ -49,7 +56,7 @@ $(document).ready(function () {
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = '![]{}*^?#&©ƒ∂∆µ¨¥®†ª•¶§∞œ†©∫√≈Ωø¢≠';
+    this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -58,9 +65,9 @@ class TextScramble {
     const promise = new Promise(resolve => this.resolve = resolve);
     this.queue = [];
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || '';
-      const to = newText[i] || '';
-      const start = Math.floor(Math.random() * 40);
+      const from = oldText[i] || "";
+      const to = newText[i] || "";
+      const start = Math.floor(Math.random() * 50);
       const end = start + Math.floor(Math.random() * 40);
       this.queue.push({ from, to, start, end });
     }
@@ -70,7 +77,7 @@ class TextScramble {
     return promise;
   }
   update() {
-    let output = '';
+    let output = "";
     let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
       let { from, to, start, end, char } = this.queue[i];
@@ -78,7 +85,7 @@ class TextScramble {
         complete++;
         output += to;
       } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.25) {
+        if (!char || Math.random() < 0.28) {
           char = this.randomChar();
           this.queue[i].char = char;
         }
@@ -105,29 +112,44 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Christopher Smith',
+  "Christopher Smith",
+  "S3903477",
+  "Intro to IT",
+  "Assignment 1"];
 
-  's3903477',
 
-  'Intro to IT',
-
-  'Assignment 1',
-
-];
-
-const el = document.querySelector('.text');
+const el = document.querySelector(".text");
 const fx = new TextScramble(el);
 
 let counter = 0;
-
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1000);
+    setTimeout(next, 800);
   });
   counter = (counter + 1) % phrases.length;
 };
 
 next();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

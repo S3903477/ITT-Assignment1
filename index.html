@@ -35,77 +35,84 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="60" id="top">
 
 <!-- HEADER SECTION -->
-<header class="container-fluid" id="header">
+<header id="header">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-  <div class="row">
-    <div class="col-sm vertical-center">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-50 navbar-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#header">
+            <i class="icon" data-feather="arrow-up-circle"></i>
+            <span>Top</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#info">
+            <i class="icon" data-feather="user"></i>
+            <span>Personal Info</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#interest">
+            <i class="icon" data-feather="hard-drive"></i>
+            <span>Interest in IT</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#idealjob">
+            <i class="icon" data-feather="briefcase"></i>
+            <span>Ideal Job</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">
+            <i class="icon" data-feather="user-check"></i>
+            <span>Personal Profile</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#project">
+            <i class="icon" data-feather="folder"></i>
+            <span>Project Idea</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#reference">
+            <i class="icon" data-feather="link"></i>
+            <span>References</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="vertical-center">
       <div class="card">
 
         <img class="mugshot" src="images/memoji.png" alt=""/>
-
-        <h1 class="text">Christopher Smith</h1>
+        <div class="scramble-container">
+          <h1 class="text"></h1>
+        </div>
 
       </div>
-
-      <!-- NAVIGATION -->
-      <nav class="navbar navbar-expand navbar-dark navigation" id="navbar">
-
-        <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
-        <div class="container">
-          <ul class="navbar-nav nav-fill w-100">
-
-            <li class="nav-item">
-              <a class="nav-link" href="#top">
-                <i class="icon" data-feather="arrow-up-circle"></i>
-                <span class="nav-span">Top</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#info">
-                <i class="icon" data-feather="user"></i>
-                <span class="nav-span">Personal Info</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#interest">
-                <i class="icon" data-feather="hard-drive"></i>
-                <span class="nav-span">Interest in IT</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#idealjob">
-                <i class="icon" data-feather="briefcase"></i>
-                <span class="nav-span">Ideal Job</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#profile">
-                <i class="icon" data-feather="user-check"></i>
-                <span class="nav-span">Personal Profile</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                <i class="icon" data-feather="folder"></i>
-                <span class="nav-span">Project Idea</span>
-              </a>
-            </li>
-
-          </ul>
-          <!-- <div class="navbar-collapse collapse-bg" id="collapsingNavbar"></div> -->
-        </div>
-      </nav>
-
     </div>
+
   </div>
+
+
 
 </header>
 
@@ -151,11 +158,23 @@
 
       <h2 class="anchor">Interest in IT</h2>
 
-      <h3>What is your interest in IT? When did your interest in IT start? Was there a particular event or person that sparked your interest? Outline your IT experience.</h3>
+      <h3>What is your interest in IT?</h3>
       <p>
-        My interest in IT began through using computers and gaming consoles in my youth. I fondly recall playing Kid Icarus on my Nintendo and point and click adventure games such as Space Quest & Police Quest on an old PC. My interest in IT and computers led to learning other skills in high school such as touch typing, word processing. I learned to build PCs in my late teens, optimising the builds for the purpose of creating music.
+        My interest in IT is quite varied. I enjoy reading about the new technologies that are constantly being developed and pondering what the impact of IT on our lives might be in the not-too-distant future. Personally, my interests are in the creative aspects of using IT and computers. I enjoy creating art, music and more recently websites and their design.
       </p>
 
+      <h3>When did your interest in IT start?</h3>
+      <p>
+        My interest in IT began through using gaming consoles, like the Nintendo Entertainment System (NES) and computers in my youth. I fondly recall playing Kid Icarus on my NES and adventure games such as Space Quest & Police Quest on an old PC. In high school I learned touch typing which greatly increased my efficiency when performing tasks on computers, the biggest hinderance to this is that I still use my left hand for controlling the mouse. In my late teens I learned to build PCs, optimising the builds for the purpose of creating music. Although I still enjoying gaming, my interests now are more focused on using computers to build websites and for creative purposes such as art and music. I quite like the idea of being able to build something without getting your hands dirty.
+      </p>
+
+      <h3>Was there a particular event or person that sparked your interest?</h3>
+      <p>
+        If I was to pick an event that sparked my interest it would be playing video games when I was younger. Now that I know a little more about how computers and code work, it amazes me how programmers were able to create such entertaining games with such limited resources.
+        I was never really inspired in my youth by a particular person, but as I’ve grown a little older, I’ve found the work done by Silicon Valley pioneers like Bill Gates, Steve Jobs and Steve Wozniak to be very inspiring. Reading about the work they did to bring computers into the mainstream and at such a young age is nothing short of incredible, and again, doing it all with what we in the current day consider to be very limited resources and computing power.
+      </p>
+
+      <h3>Outline your IT experience.</h3>
       <p>
         Except for one or two jobs in my career, I have always been sat at, or had a need to use a computer. In the past, I used MS Excel to source and manipulate data for forecasting workloads and staffing requirements based off those forecasts. Learning and applying Excel formulas sparked an interest in coding, and later web development. In 2015 I worked at a tech start-up where I was responsible for user acceptance testing, creating technical documentation, user guides, and video tutorials on how to use the product.
       </p>
@@ -268,7 +287,7 @@
 
   </div>
 
-  <div class="row" id="contact">
+  <div class="row" id="project">
 
     <div class="col section">
 
@@ -276,7 +295,7 @@
 
       <h3>Overview</h3>
       <p>
-        My project idea is to create custom GUI interfaces for Airwindows AU/VST (Audio Units /Virtual Studio Technology) plugins. Airwindows is a one man show run by mastering engineer and programmer, Chris Johnson. The plugins Chris creates currently load a default interface within Digital Audio Workstation (DAW) applications. These interfaces, whilst functional are quite bland in comparison to some of the more polished plugins produced by other companies and lack important visual feedback such as metering. Chris has recently open sourced a selection of his plugins on GitHub so the bulk of the project would revolve around creating the graphic components and adding code to link those graphics to controls which are exposed to the user.
+        My project idea is to create custom GUI interfaces for Airwindows <a href="#ref-1" class="link">[1]</a> AU/VST (Audio Units /Virtual Studio Technology) plugins. Airwindows is a one man show run by mastering engineer and programmer, Chris Johnson. The plugins Chris creates currently load a default interface within Digital Audio Workstation (DAW) applications. These interfaces, whilst functional are quite bland in comparison to some of the more polished plugins produced by other companies and lack important visual feedback such as metering. Chris has recently open sourced a selection of his plugins on GitHub <a href="#ref-2" class="link">[2]</a> so the bulk of the project would revolve around creating the graphic components and adding code to link those graphics to controls which are exposed to the user.
       </p>
 
       <h3>Motivation</h3>
@@ -347,7 +366,7 @@
         A text editor for creating and editing C++ code.
       </p>
 
-      <h5>Steinberg VST SDK & Apple Audio Unit Frameworks</h5>
+      <h5>Steinberg VST SDK & Apple Audio Unit Frameworks<a href="#ref-3" class="link"> [3]</a>  <a href="#ref-2" class="link"> [4]</a></h5>
       <p>
         These frameworks provide the foundation that audio plugins are built upon and will allow the plugin to be recognised by and communicate with a DAW or plugin host.
       </p>
@@ -370,6 +389,35 @@
       <h3>Outcome</h3>
       <p>
         The ergonomics and efficiency of using the Airwindows plugin suite is enhanced by placing reusable controls, such as metering and input/output faders, in the same place on the interface and controls unique to a specific plugin in the middle of the GUI. Users can now perform simple tasks such as level adjustment or level monitoring without needing to open and close the interface of another plugin. Adding these features removes the need to add extra plugins to a processing chain and will reduce the amount of CPU processing power required to process a signal.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="row" id="reference">
+
+    <div class="col section">
+
+      <h2>References</h2>
+      <p id="ref-1">[1] Airwindows. 2021. Airwindows | handsewn bespoke digital audio. [ONLINE] Available at:
+        <br>
+        <a href="https://www.airwindows.com/" class="tag-wrap">https://www.airwindows.com/</a>
+      </p>
+
+      <p id="ref-2">[2] GitHub. 2021. GitHub - airwindows/airwindows: This contains all the Airwindows audio open source code.
+        <br>
+        <a href="https://github.com/airwindows/airwindows" class="tag-wrap">https://github.com/airwindows/airwindows</a>
+      </p>
+
+      <p id="ref-3">[3] 3rd-party developers support & SDKs | Steinberg. [ONLINE] Available at:
+        <br>
+        <a href="https://new.steinberg.net/developers/" class="tag-wrap">https://new.steinberg.net/developers/</a>
+      </p>
+
+      <p id="ref-4">[4] Apple Developer Documentation. 2021. Apple Developer Documentation. [ONLINE] Available at:
+        <br>
+        <a href="https://developer.apple.com/documentation/audiounit" class="tag-wrap">https://developer.apple.com/documentation/audiounit</a>
       </p>
 
     </div>
